@@ -1,0 +1,941 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+button {
+    cursor: pointer;
+}
+
+.continer {
+    display: grid;
+    background-color: #222f53;
+    grid-template-areas:
+
+        "hedaer hedaer hedaer"
+        "main main main"
+        "mainboxes mainboxes mainboxes"
+        "features features features"
+        "works works works"
+        "facts facts facts"
+        "products products products"
+        "subscribe subscribe subscribe"
+        "footer footer footer";
+    gap: 0px;
+
+}
+
+h1 hr {
+    color: #0e9879;
+    width: 20%;
+}
+
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 10;
+    background-color: #0e9476;
+
+    z-index: 1;
+    gap: 20px;
+}
+
+.subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+
+.subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+}
+
+.subnav:hover .subnav-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .......................  header ............. */
+.hedaer {
+    grid-area: hedaer;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+
+    color: white;
+    /* justify-content: center;
+align-items: center; */
+
+}
+
+.hedaer a {
+    color: white;
+}
+
+.logo {
+    margin-left: 10%;
+    margin-top: 5%;
+    cursor: pointer;
+
+}
+
+.socialmedia {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: white;
+}
+
+.socialmedia i {
+    color: #10a685;
+}
+
+nav {
+    margin-left: 60%;
+}
+
+nav ul {
+    margin-top: 7%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+nav ul li {
+    list-style-type: none;
+
+}
+
+
+
+/* .......................  main ............. */
+
+
+
+
+.main {
+    grid-area: main;
+
+    color: white;
+    margin-top: 10%;
+    margin-left: 50%;
+    text-align: center;
+}
+
+
+.main h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-right: 10%;
+}
+
+.main p {
+    margin-bottom: 20px;
+    margin-right: 80%;
+    width: 80%;
+}
+
+.main .btn {
+    background-color: #222f53;
+    border: 1px solid white;
+    padding: 10px 20px;
+    margin-right: 30%;
+    margin-bottom: 50%;
+    color: white;
+
+}
+
+/* .......................  main ............. */
+
+.mainboxes {
+    grid-area: mainboxes;
+
+    /* gap: 20px; */
+    color: white;
+    background-color: white;
+
+
+
+
+}
+
+.modeboxes {
+    /* margin-left: 20%; */
+
+    /* margin-left: 10%; */
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    /* justify-content: center;
+align-items: center; */
+    margin-left: 10%;
+    margin-top: 0%;
+    text-align: center;
+}
+
+.boxes {
+    margin-top: 0%;
+    /* margin-left: 5%; */
+    /* margin-bottom: 10%; */
+
+    width: 30%;
+    height: 40vh;
+    background-color: #0e9476;
+    border: 1px solid #10a685;
+    padding: 10% 5%;
+    /* text-align: center; */
+    position: relative;
+
+
+}
+
+.boxes p {
+
+    font-size: 20px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+}
+
+.boxes .fa-solid {
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+
+    /* left: 10px;
+right: 10px; */
+
+    font-size: 30px;
+    background-color: #79e1ca;
+    border-radius: 50px;
+    width: 30%;
+    height: 10vh;
+    opacity: 5px;
+
+    padding: 20px 40px;
+
+
+}
+
+.headbox {
+    background-color: #0e9476;
+    border: 1px solid #0e9879;
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    bottom: 100%;
+    right: 0%;
+    left: 0;
+
+
+}
+
+.boxes .btn {
+    background-color: #10a685;
+    border: 1px solid white;
+    padding: 10px 20px;
+
+    width: 50%;
+    color: white;
+
+}
+
+
+.boxtest {
+    z-index: 1;
+    width: 30%;
+    height: 50vh;
+
+}
+
+/* .......................  features ............. */
+.features {
+    grid-area: features;
+    background-color: white;
+    color: black;
+    padding: 10% 20%;
+    text-align: center;
+
+
+}
+
+.modefeatrues h1 {
+    margin-bottom: 5%;
+}
+
+.modefeatrues hr {
+    color: #0e9879;
+    width: 20%;
+    /* margin-left: 40%; */
+
+}
+
+.modefeatrues p {
+    margin-bottom: 10%;
+}
+
+.mainfeatures {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+
+}
+
+.mainfeatures i {
+    background-color: white;
+    color: #0e9879;
+    border: 1px solid #0e9879;
+    font-size: 30px;
+    border-radius: 200px;
+    width: 30%;
+    height: 7vh;
+    opacity: 10px;
+    padding: 10px 5px;
+    margin-bottom: 10%;
+}
+
+/* .......................  works ............. */
+.works {
+    grid-area: works;
+    background-color: #313841;
+    color: white;
+    padding: 2% 0%;
+}
+
+/* .mainwork{
+    margin: 20% 40%;
+
+} */
+.mainwork h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 5%;
+
+}
+
+
+.mainwork p {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10%;
+}
+
+.worksrow {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+}
+
+.worklist {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-left: 10%;
+
+}
+
+.work1 {
+    background-color: #9ca2ab;
+    width: 55%;
+    height: 40vh;
+}
+
+.work2 {
+    background-color: lightskyblue;
+    width: 25%;
+    height: 40vh;
+}
+
+.work3 {
+    background-color: pink;
+    width: 45%;
+    height: 40vh;
+
+}
+
+.work4 {
+    background-color: red;
+    width: 35%;
+    padding-right: 10%;
+    height: 40vh;
+
+
+}
+
+.work5 {
+    background-color: orange;
+    width: 25%;
+    height: 40vh;
+
+}
+
+.work6 {
+    background-color: lightskyblue;
+    width: 55%;
+    height: 40vh;
+}
+
+.mainwork .btn {
+    margin-top: 10%;
+    background-color: #9ca2ab;
+    border: 1px solid white;
+    padding: 10px 10px;
+
+    width: 20%;
+    margin-left: 40%;
+    margin-bottom: 5%;
+    color: white;
+
+}
+
+/* .......................  facts ............. */
+.facts {
+    grid-area: facts;
+    background-color: white;
+}
+
+.funfacts {
+    margin: 10% 10%;
+}
+
+.funfacts h1 {
+    text-align: center;
+}
+
+.funfacts hr {
+    color: #0e9879;
+    margin-left: 40%;
+
+
+}
+
+.funfacts p {
+    text-align: center;
+}
+
+.multifacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.multifacts h1 {
+    color: #0e9879;
+    font-size: 30px;
+    padding-left: 10%;
+    margin-bottom: 15%;
+}
+
+.multifacts i {
+    color: gray;
+    font-size: 30px;
+    margin-left: 30%;
+    margin-bottom: 15%;
+}
+
+.multifacts p {
+    color: gray;
+}
+
+
+/* .......................  products ............. */
+.products {
+    grid-area: products;
+    background-color: #efefef;
+}
+
+.secproducts {
+    margin: 10% 10%;
+
+
+}
+
+.secproducts h1 {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 5%;
+
+}
+
+h1 hr {
+    text-align: center;
+    margin-left: 40%;
+    width: 20%;
+
+}
+
+.secproducts p {
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.mainproducts {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* .mainproducts .fa-solid {
+    background-color: #b9bebf;
+    border: 1px solid #b9bebf;
+    color: white;
+    padding: 10px 10px;
+}
+
+
+.mainproducts1 {
+    background-color: #777b7e;
+    border: 1px solid black;
+    width: 100%;
+    height: 30vh;
+    position: relative
+}
+
+.mainproducts2 {
+    background-color: #acd3df;
+    width: 100%;
+    height: 30vh;
+} */
+
+/* .fa-arrow-right {
+    position: absolute;
+    top: 30%;
+    cursor: pointer;
+    right: 5%;
+}
+
+.fa-arrow-left {
+    position: absolute;
+    top: 30%;
+    cursor: pointer;
+    left: 5%;
+}
+
+.mainproducts3 {
+    background-color: #d3d5e5;
+    width: 100%;
+    height: 30vh;
+
+    position: relative
+} */
+
+/* .......................  subscribe ............. */
+.subscribe {
+    grid-area: subscribe;
+    background-color: rgb(54, 62, 69);
+    color: white;
+    text-align: center;
+
+}
+
+
+
+
+.secsubscribe h1 {
+    margin-top: 10%;
+}
+
+.secsubscribe hr {
+    margin-left: 40%;
+    margin-bottom: 2%;
+    width: 20%;
+}
+
+.secsubscribe p {
+    margin-bottom: 5%;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-left: 10%;
+
+}
+
+.form input {
+    width: 30%;
+    height: 5vh;
+    background-color: rgb(54, 62, 69);
+    border: 1px solid white;
+    color: white;
+}
+
+.secsubscribe .btn {
+    background-color: #0e9879;
+    border: 1px solid white;
+    padding: 10px 20px;
+    margin-right: 30%;
+    margin-bottom: 20%;
+    color: white;
+    width: 30%;
+}
+
+/* .......................  footer ............. */
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    background-color: white;
+
+    padding: 10% 10%;
+}
+
+.footer h1 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.col1 p {
+    color: gray;
+}
+
+.col2 a {
+    color: #0e9879;
+}
+
+.col2 li {
+    list-style-type: none;
+}
+
+.col1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.col2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.col3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.col3 a {
+    color: #0e9879;
+}
+
+nav .fas {
+    display: none;
+
+}
+
+.btn:hover {
+    background-color: #0e9476;
+}
+
+.socialmedia i:hover {
+    color: white;
+}
+
+.logo:hover {
+    background-color: #0e9476;
+
+}
+
+@media only screen and (max-width:600px) {
+
+    nav .fas {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+
+    }
+
+    nav ul {
+        background-color: #0e9476;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        width: 100px;
+        right: -200px;
+        display: flex;
+        flex-direction: column;
+
+        padding: 30px 10px;
+    }
+
+
+
+    nav ul li {
+        margin-top: 30px;
+
+
+    }
+
+    nav ul li a:hover {
+        color: aliceblue;
+    }
+
+
+    nav .fa-bars {
+        position: absolute;
+        right: 20%;
+        top: 5%;
+    }
+
+    nav .fa-times {
+        position: absolute;
+        right: 10%;
+        top: 0%;
+    }
+
+    .socialmedia {
+        margin-top: 5%;
+        display: flex wrap;
+        flex-direction: row;
+        position: absolute;
+        left: 35%;
+        top: 3%;
+        gap: 20px;
+        color: white;
+        color: #10a685;
+    }
+
+    .logo {
+        margin-left: 10%;
+        margin-top: 7%;
+
+    }
+
+    .socialmedia .fa-mobile {
+        display: none;
+    }
+
+    .main {
+        grid-area: main;
+
+        color: white;
+        margin-top: 20%;
+        margin-left: 50%;
+        margin-bottom: 50%;
+        text-align: center;
+    }
+
+    .modeboxes {
+        /* margin-left: 20%; */
+
+        /* margin-left: 10%; */
+        display: flex;
+        flex-direction: row;
+        gap: 2px;
+        /* justify-content: center;
+align-items: center; */
+        margin-left: 0%;
+        margin-top: 0%;
+        text-align: center;
+    }
+
+    .boxes {
+        margin-top: 0%;
+
+        /* margin-left: 5%; */
+        /* margin-bottom: 10%; */
+
+        width: 40%;
+        height: 40vh;
+        background-color: #0e9476;
+        border: 1px solid #10a685;
+        padding: 10% 5%;
+        /* text-align: center; */
+        position: relative;
+
+
+    }
+
+    .boxes p {
+
+        font-size: 15px;
+        margin-top: 10%;
+        margin-bottom: 10%;
+
+    }
+
+    .boxes .fa-solid {
+        position: absolute;
+        bottom: 10%;
+        left: 30%;
+
+        /* left: 10px;
+    right: 10px; */
+
+        font-size: 30px;
+        background-color: #79e1ca;
+        border-radius: 50px;
+        width: 30%;
+        height: 8vh;
+        opacity: 5px;
+
+        padding: 20px 10px;
+
+
+    }
+
+
+
+
+
+
+    .features {
+
+        background-color: white;
+        color: black;
+        padding: 10% 5%;
+        /* text-align: center; */
+
+
+    }
+
+    .mainfeatures {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        font-size: 10px;
+    }
+
+    .mainfeatures i {
+        background-color: white;
+        color: #0e9879;
+        border: 1px solid #0e9879;
+        font-size: 30px;
+        border-radius: 100px;
+        width: 50%;
+        height: 7vh;
+        opacity: 10px;
+        padding: 10px 5px;
+        margin-bottom: 10%;
+    }
+    .footer {
+        grid-area: footer;
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+        background-color: white;
+    
+        padding: 10% 5%;
+       
+    }
+
+    .col1 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 50%;
+    }
+
+    .col1 p {
+        font-size: 15px;
+
+        width: 200%;
+    }
+
+    .col2 {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+    }
+
+    .col2 ul li {
+        font-size: 15px;
+
+        width: 200%;
+    }
+
+    .col3 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+
+
+    .col3 .coninerspan {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .col3 a i {
+        font-size: 13px;
+
+        width: 300%;
+    }
+
+    .col3 span {
+        font-size: 13px;
+        color: #777b7e;
+    }
+}
+
+
+/* Slideshow container */
+/* .mySlides {display: none} */
+
+
+/* Slideshow container */
+.slideshow-container {
+  width: 80%;
+  position: relative;
+  margin: 20px 15%;
+}
+
+.mySlides img{
+    width: 80%;
+
+    margin-left: 25%;
+}
+/* Next & previous buttons */
+.prev ,.next {
+    background-color: black;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+
+  border-radius: 0 3px 3px 0;
+ 
+}
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
