@@ -463,7 +463,7 @@ right: 10px; */
 }
 
 .secproducts {
-    margin: 10% 10%;
+    margin: 10% 5%;
 
 
 }
@@ -485,7 +485,7 @@ h1 hr {
 
 .secproducts p {
     text-align: center;
-    margin-bottom: 10%;
+    margin-bottom: 0%;
 }
 
 .mainproducts {
@@ -516,19 +516,7 @@ h1 hr {
     height: 30vh;
 } */
 
-/* .fa-arrow-right {
-    position: absolute;
-    top: 30%;
-    cursor: pointer;
-    right: 5%;
-}
 
-.fa-arrow-left {
-    position: absolute;
-    top: 30%;
-    cursor: pointer;
-    left: 5%;
-}
 
 .mainproducts3 {
     background-color: #d3d5e5;
@@ -536,8 +524,17 @@ h1 hr {
     height: 30vh;
 
     position: relative
-} */
+} 
+.mainproducts img{
+    width:20%;
+ height: 20vh;
+ 
+ position: absolute;
+ right: 10%;
+ top:0%;
+ bottom:30%;
 
+}
 /* .......................  subscribe ............. */
 .subscribe {
     grid-area: subscribe;
@@ -909,14 +906,14 @@ align-items: center; */
 .mySlides img{
     width: 80%;
 
-    margin-left: 25%;
+    margin-left: 20%;
 }
 /* Next & previous buttons */
 .prev ,.next {
     background-color: black;
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 280%;
 
   width: auto;
   padding: 16px;
