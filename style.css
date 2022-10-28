@@ -460,6 +460,7 @@ right: 10px; */
 .products {
     grid-area: products;
     background-color: #efefef;
+    height: 50vh;
 }
 
 .secproducts {
@@ -541,6 +542,7 @@ h1 hr {
     background-color: rgb(54, 62, 69);
     color: white;
     text-align: center;
+
 
 }
 
@@ -904,9 +906,11 @@ align-items: center; */
 }
 
 .mySlides img{
-    width: 80%;
+    width: 70%;
 
-    margin-left: 20%;
+    margin-left: 15%;
+
+    margin-right: 5%;
 }
 /* Next & previous buttons */
 .prev ,.next {
@@ -915,14 +919,14 @@ align-items: center; */
   position: absolute;
   top: 280%;
 
-  width: auto;
+border-radius: 10%;
   padding: 16px;
   margin-top: -22px;
   color: white;
   font-weight: bold;
   font-size: 18px;
 
-  border-radius: 0 3px 3px 0;
+
  
 }
 /* Position the "next button" to the right */
